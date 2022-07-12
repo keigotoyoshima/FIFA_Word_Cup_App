@@ -1,3 +1,12 @@
 // Place all the styles related to the HomePage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.home_page{
+  height: 100%;
+  width: 100%;
+}
+.background-image{
+  font-size: large;
+  color: red;
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
