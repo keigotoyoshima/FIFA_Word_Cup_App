@@ -2,10 +2,18 @@
   "name": "FIFA_world_cup_app",
   "private": true,
   "dependencies": {
+    "@babel/preset-react": "^7.18.6",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "turbolinks": "^5.2.0"
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react_ujs": "^2.6.2",
+    "ts-loader": "^9.3.1",
+    "turbolinks": "^5.2.0",
+    "typescript": "^4.7.4"
   },
   "version": "0.1.0",
   "devDependencies": {
