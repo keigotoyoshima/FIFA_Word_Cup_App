@@ -11,6 +11,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { BasicTableA } from './Table';
+import { Toolbar } from "@mui/material";
+import AppNavBar from "./Navbar";
+
 
 const darkTheme = createTheme({
   palette: { mode: 'dark' },
@@ -18,15 +21,12 @@ const darkTheme = createTheme({
     // Name of the component
     MuiTableCell: {
       defaultProps: {
-        // The props to change the default for.
-        // disableRipple: true, // No more ripple, on the whole application 💣!
         size:"small",
       },
       styleOverrides: {
-        // Name of the slot
         root: {
-          // Some CSS
           // fontSize: '10px',
+          lineHeight:"1",
         },
       },
    }
@@ -48,9 +48,11 @@ const HomePage = ({value}) => {
     
     <ThemeProvider theme={darkTheme}>
       <div className="background-image">
-        <h1>This is Home Page component</h1>
-        <Row style={{height:"90%", width:"100%"}}>
-          <Row style={{height:"25%", width:"100%"}}>
+        <div style={{height:"7%"}}>
+          <AppNavBar></AppNavBar>
+        </div>
+        <Row style={{height:"93%", width:"100%", margin:"0", justifyContent:"center", alignItems:"center"}}>
+          <Row style={{height:"20%", width:"100%"}}>
             <Col xs={6} style={{height: "100%",}}>
               <BasicTableA></BasicTableA>
             </Col>
@@ -58,7 +60,7 @@ const HomePage = ({value}) => {
               <BasicTableA></BasicTableA>
             </Col>
           </Row>
-          <Row style={{height:"25%", width:"100%"}}>
+          <Row style={{height:"20%", width:"100%"}}>
             <Col xs={6} style={{height: "100%",}}>
               <BasicTableA></BasicTableA>
             </Col>
@@ -66,7 +68,7 @@ const HomePage = ({value}) => {
               <BasicTableA></BasicTableA>
             </Col>
           </Row>
-          <Row style={{height:"25%", width:"100%"}}>
+          <Row style={{height:"20%", width:"100%"}}>
             <Col xs={6} style={{height: "100%",}}>
               <BasicTableA></BasicTableA>
             </Col>
@@ -74,7 +76,7 @@ const HomePage = ({value}) => {
               <BasicTableA></BasicTableA>
             </Col>
           </Row>
-          <Row style={{height:"25%", width:"100%"}}>
+          <Row style={{height:"20%", width:"100%"}}>
             <Col xs={6} style={{height: "100%",}}>
               <BasicTableA></BasicTableA>
             </Col>

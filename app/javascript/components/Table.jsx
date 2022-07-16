@@ -60,6 +60,7 @@ export function BasicTableA() {
       <Table sx={{ height:"100%" }} aria-label="simple table">
         <TableHead>
           <TableRow>
+            {/* TeamをGroup名に変更したい */}
             <CustomTableCell>Team</CustomTableCell>
             <StyledTableCell align="right">GP</StyledTableCell>
             <StyledTableCell align="right">W</StyledTableCell>
