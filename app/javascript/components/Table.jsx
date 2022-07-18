@@ -61,7 +61,7 @@ export function BasicTableA() {
         <TableHead>
           <TableRow>
             {/* TeamをGroup名に変更したい */}
-            <CustomTableCell>A</CustomTableCell>
+            <CustomTableCell>Group-A</CustomTableCell>
             <StyledTableCell align="right">GP</StyledTableCell>
             <StyledTableCell align="right">W</StyledTableCell>
             <StyledTableCell align="right">D</StyledTableCell>
