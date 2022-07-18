@@ -1,0 +1,2 @@
+module GroupPageHelper
+end
