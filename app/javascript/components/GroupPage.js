@@ -15,15 +15,19 @@ import { Toolbar } from "@mui/material";
 import AppNavBar from "./Navbar";
 
 
-const GroupPage = ({ value }) => {
+const GroupPage = ({ countries }) => {
   useEffect(() => {
-    console.log("use effect!!");
+    console.log(countries);
   }, []);
 
 
   return (
     <div>
-      This is Group Page Components.
+      {countries.map((country) => {
+        return (
+        <h1>{country.name}</h1>
+        )
+      })}
     </div>
   );
 }
