@@ -1,4 +1,4 @@
-FROM node:15.8
+FROM node:14.17.0
 
 ENV APP /usr/src/app
 RUN mkdir $APP
