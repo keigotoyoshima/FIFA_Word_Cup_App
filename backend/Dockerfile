@@ -13,7 +13,7 @@ WORKDIR $APP
 
 COPY Gemfile* $APP/
 # 新しいGemfileのgemがコンテナ内の/usr/local/bundleにinstallされる
-RUN bundle install
+# RUN bundle install
 # docker-compose up でvolumeと紐付いたタイミングで/usr/local/bundleが古いvolumeに上書かれてしまう。そのため，docker-compose run backend bundle installでvolumeを更新する。
 
 COPY . $APP/
