@@ -1,4 +1,4 @@
-FROM ruby:3.0.0
+FROM ruby:2.6.8
 
 ENV BUNDLE_VERSION 2.2.11
 ENV APP /usr/src/app
