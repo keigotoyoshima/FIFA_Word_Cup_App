@@ -6,6 +6,8 @@ ENV APP /usr/src/app
 # netcat is for nc command
 RUN apt-get update && apt-get install -y netcat
 RUN apt-get install -y vim
+RUN apt-get install -y nodejs
+
 # RUN gem install  --version "$BUNDLE_VERSION" 
 # RUN gem install bundler:2.3.17
 
