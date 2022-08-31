@@ -83,5 +83,5 @@
 
 
 # Ignore bundler config.
-/backend/project-backend/.bundle
-/backend/project-backend/vendor/bundle
+/backend/.bundle
+/backend/vendor/bundle
