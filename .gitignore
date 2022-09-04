@@ -85,3 +85,6 @@
 # Ignore bundler config.
 /backend/.bundle
 /backend/vendor/bundle
+
+
+.env
