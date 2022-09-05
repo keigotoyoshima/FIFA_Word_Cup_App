@@ -64,6 +64,9 @@ Rails.application.configure do
   # Hostname
   config.hosts << 'localhost'
   config.hosts << '127.0.0.1'
-  config.hosts << ENV['BACKEND_HOST']
+  # ngrok起動する度にIPアドレス変わるため
+  config.hosts << '.ngrok.io'
+  config.hosts << 'dfec-103-5-140-142.jp.ngrok.io'
+  # config.hosts << ENV['BACKEND_HOST']
 
 end
